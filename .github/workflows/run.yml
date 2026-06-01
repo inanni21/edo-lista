@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Compilar
-        run: gcc -o edo lista_edo.c -lm
+        run: gcc -o edo edo_lista.c -lm
       - name: Executar
         run: ./edo
