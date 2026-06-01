@@ -1,0 +1,13 @@
+name: Compilar e Executar EDO
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compilar
+        run: gcc -o edo lista_edo.c -lm
+      - name: Executar
+        run: ./edo
